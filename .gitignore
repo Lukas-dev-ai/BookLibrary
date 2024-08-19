@@ -1,0 +1,20 @@
+# Maven build outputs
+/target/
+
+# IntelliJ IDEA specific files
+/.idea/
+/*.iml
+
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# Log files
+*.log
