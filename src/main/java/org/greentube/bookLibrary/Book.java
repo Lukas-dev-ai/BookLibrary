@@ -2,12 +2,18 @@ package org.greentube.bookLibrary;
 
 import java.math.BigDecimal;
 
+/**
+ * The abstract Book class represents a book in the library.
+ * It holds basic information about the book and provides methods to access this information.
+ * This class should be extended by more specific types of books.
+ */
 public abstract class Book {
     protected enum Category {
         USED,
         STANDARD,
         RARE
     }
+
     private final String title;
     private final String author;
     private final int totalCopies;
@@ -15,7 +21,7 @@ public abstract class Book {
     private final int numberOfPages;
     private final Category category;
 
-    public Book(String title, String author, int totalCopies, int yearPublished, int numberOfPages, Category category){
+    public Book(String title, String author, int totalCopies, int yearPublished, int numberOfPages, Category category) {
         this.title = title;
         this.author = author;
         this.totalCopies = totalCopies;
@@ -32,31 +38,13 @@ public abstract class Book {
         return totalCopies;
     }
 
-    public int getYearPublished() {
-        return yearPublished;
-    }
-
-    public int getNumberOfPages() {
-        return numberOfPages;
-    }
-
     public String getTitle() {
         return title;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
     public abstract BigDecimal getPrice();
-    public abstract String getState();
 
-    public boolean compareObj(Object object){
-        if(this == object) return true;
-        if(object == null || getClass() != object.getClass()) return false;
-        Book book = (Book) object;
-        return title.equalsIgnoreCase(book.title) && author.equals(book.author);
-    }
+    public abstract String getState();
 
     @Override
     public String toString() {

@@ -6,17 +6,17 @@ public class BookService {
 
         Library library = new Library();
 
-        Book firstCheapBook = new CheapBook("Vplyv1", "Robert Ciadiny", 3, 2010, 199, 3.99, "Used", Book.Category.USED);
-        Book secondCheapBook = new CheapBook("Vplyv2", "Robert Ciadiny", 3, 2010, 199, 2.99, "Missing pages", Book.Category.USED);
-        Book thirdCheapBook = new CheapBook("Vplyv3", "Robert Ciadiny", 3, 2010, 199, 4.99, "Cool", Book.Category.STANDARD);
+        Book firstCheapBook = new CheapBook("1984", "George Orwell", 5, 1949, 328, 15.99, "Used", Book.Category.USED);
+        Book secondCheapBook = new CheapBook("To Kill a Mockingbird", "Harper Lee", 3, 1960, 281, 12.99, "Used", Book.Category.USED);
+        Book thirdCheapBook = new CheapBook("The Great Gatsby", "F. Scott Fitzgerald", 4, 1925, 180, 10.99, "Used", Book.Category.USED);
 
-        Book firstStandardBook = new StandardBook("Vplyv1", "Robert Ciadiny", 3, 2010, 199, 3.99, "Used", false, Book.Category.STANDARD);
-        Book secondStandardBook = new StandardBook("Vplyv2", "Robert Ciadiny", 3, 2010, 199, 2.99, "Missing pages", true, Book.Category.STANDARD);
-        Book thirdStandardBook = new StandardBook("Vplyv3", "Robert Ciadiny", 3, 2010, 199, 4.99, "Cool", false, Book.Category.STANDARD);
+        Book firstStandardBook = new StandardBook("Moby Dick", "Herman Melville", 6, 1851, 635, 18.99, "Standard", Book.Category.STANDARD);
+        Book secondStandardBook = new StandardBook("Pride and Prejudice", "Jane Austen", 4, 1813, 432, 9.99, "Standard", Book.Category.STANDARD);
+        Book thirdStandardBook = new StandardBook("The Catcher in the Rye", "J.D. Salinger", 5, 1951, 277, 14.99, "Standard", Book.Category.STANDARD);
 
-        Book firstRareBook = new RareBook("Vplyv1", "Robert Ciadiny", 3, 2010, 199, 3.99, "Used", false, Book.Category.RARE);
-        Book secondRareBook = new RareBook("Vplyv2", "Robert Ciadiny", 3, 2010, 199, 2.99, "Missing pages", true, Book.Category.RARE);
-        Book thirdRareBook = new RareBook("Vplyv3", "Robert Ciadiny", 3, 2010, 199, 4.99, "Cool", false, Book.Category.RARE);
+        Book firstRareBook = new RareBook("Brave New World", "Aldous Huxley", 3, 1932, 311, 13.99, "Rare", Book.Category.RARE);
+        Book secondRareBook = new RareBook("War and Peace", "Leo Tolstoy", 2, 1869, 1225, 20.99, "Rare", Book.Category.RARE);
+        Book thirdRareBook = new RareBook("The Hobbit", "J.R.R. Tolkien", 7, 1937, 310, 16.99, "Rare", Book.Category.RARE);
 
 
         library.registerBook(firstCheapBook);
